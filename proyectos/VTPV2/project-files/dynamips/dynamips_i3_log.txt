@@ -1,0 +1,64 @@
+Feb 24 23:01:07.444 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 24 23:01:07.446 HYPERVISOR: Started on IP = localhost, TCP port = 49952.
+Feb 24 23:01:07.639 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 24 23:01:07.641 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips 
+Feb 24 23:01:07.642 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips
+Feb 24 23:01:07.643 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c4420c42-dced-4e42-91d3-3485f2a60df9 
+Feb 24 23:01:07.968 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c4420c42-dced-4e42-91d3-3485f2a60df9
+Feb 24 23:01:07.969 HYPERVISOR: exec_cmd: vm create SERVIDOR 3 c3725 
+Feb 24 23:01:08.166 VM: VM SERVIDOR created.
+Feb 24 23:01:08.167 HYPERVISOR: exec_cmd: vm set_con_tcp_port SERVIDOR 5002 
+Feb 24 23:01:08.168 HYPERVISOR: exec_cmd: c3725 get_mac_addr SERVIDOR 
+Feb 24 23:01:08.168 HYPERVISOR: exec_cmd: vm set_disk0 SERVIDOR 1 
+Feb 24 23:01:08.169 HYPERVISOR: exec_cmd: vm set_exec_area SERVIDOR 64 
+Feb 24 23:01:08.172 HYPERVISOR: exec_cmd: vm set_ios SERVIDOR C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:01:08.174 HYPERVISOR: exec_cmd: c3725 set_mac_addr SERVIDOR c203.5070.0000 
+Feb 24 23:01:08.175 HYPERVISOR: exec_cmd: vm set_nvram SERVIDOR 256 
+Feb 24 23:01:08.176 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:01:08.176 HYPERVISOR: exec_cmd: vm slot_add_binding SERVIDOR 1 0 NM-16ESW 
+Feb 24 23:01:08.177 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:01:08.178 HYPERVISOR: exec_cmd: vm slot_add_binding SERVIDOR 2 0 NM-1FE-TX 
+Feb 24 23:01:11.227 HYPERVISOR: exec_cmd: nio create_udp udp-13c27ae2-dcb9-4e4b-9433-c77109f21530 10010 127.0.0.1 10011 
+Feb 24 23:01:11.553 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVIDOR 1 1 udp-13c27ae2-dcb9-4e4b-9433-c77109f21530 
+Feb 24 23:01:11.554 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:01:11.907 HYPERVISOR: exec_cmd: nio create_udp udp-309a5aa8-1959-4648-a8bf-51d1ca8ca394 10020 127.0.0.1 10021 
+Feb 24 23:01:11.916 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVIDOR 1 2 udp-309a5aa8-1959-4648-a8bf-51d1ca8ca394 
+Feb 24 23:01:11.918 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:24:25.722 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Feb 24 23:24:25.727 VM: VM Ghost created.
+Feb 24 23:24:25.728 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:24:25.729 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 24 23:24:25.730 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:24:25.731 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 24 23:24:25.732 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Feb 24 23:24:25.733 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 24 23:24:27.009 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 24 23:24:27.022 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 24 23:24:27.305 VM: VM Ghost shutdown.
+Feb 24 23:24:27.309 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Feb 24 23:24:27.309 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 24 23:24:27.309 VM: VM Ghost destroyed.
+Feb 24 23:24:27.359 HYPERVISOR: exec_cmd: vm set_ghost_status SERVIDOR 2 
+Feb 24 23:24:27.362 HYPERVISOR: exec_cmd: vm set_ghost_file SERVIDOR C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:24:27.362 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:24:27.362 HYPERVISOR: exec_cmd: vm set_config SERVIDOR configs\i3_startup-config.cfg 
+Feb 24 23:24:27.362 HYPERVISOR: exec_cmd: vm start SERVIDOR 
+Feb 24 23:24:57.821 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:24:57.830 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:25:25.971 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:25:25.971 HYPERVISOR: exec_cmd: vm stop SERVIDOR 
+Feb 24 23:25:26.101 VM: VM SERVIDOR shutdown.
+Feb 24 23:25:26.101 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:25:39.231 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:25:39.231 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SERVIDOR 1 1 
+Feb 24 23:25:39.242 HYPERVISOR: exec_cmd: nio delete udp-13c27ae2-dcb9-4e4b-9433-c77109f21530 
+Feb 24 23:25:39.311 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:25:39.311 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SERVIDOR 1 2 
+Feb 24 23:25:39.311 HYPERVISOR: exec_cmd: nio delete udp-309a5aa8-1959-4648-a8bf-51d1ca8ca394 
+Feb 24 23:25:39.531 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:25:39.531 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:25:39.542 HYPERVISOR: exec_cmd: vm delete SERVIDOR 
+Feb 24 23:25:39.542 VM: VM SERVIDOR destroyed.
+Feb 24 23:25:39.572 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 24 23:25:40.022 HYPERVISOR: Stopped.
+Feb 24 23:25:40.022 GENERAL: reset done.

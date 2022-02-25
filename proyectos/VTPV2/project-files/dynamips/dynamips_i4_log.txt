@@ -1,0 +1,97 @@
+Feb 24 23:25:43.927 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 24 23:25:43.927 HYPERVISOR: Started on IP = localhost, TCP port = 50307.
+Feb 24 23:25:44.352 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 24 23:25:44.354 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips 
+Feb 24 23:25:44.462 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips
+Feb 24 23:25:44.464 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\7cde9eb1-9565-4e55-aeb1-849a46ad5a36 
+Feb 24 23:25:44.465 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\7cde9eb1-9565-4e55-aeb1-849a46ad5a36
+Feb 24 23:25:44.465 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+Feb 24 23:25:44.474 VM: VM ESW1 created.
+Feb 24 23:25:44.474 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
+Feb 24 23:25:44.474 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Feb 24 23:25:44.474 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:44.474 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Feb 24 23:25:44.474 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Feb 24 23:25:44.481 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Feb 24 23:25:44.481 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Feb 24 23:25:44.481 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-1FE-TX 
+Feb 24 23:25:44.481 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Feb 24 23:25:44.481 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 2 0 NM-1FE-TX 
+Feb 24 23:25:44.612 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:51.932 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:59.148 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:59.148 HYPERVISOR: exec_cmd: vm rename ESW1 SERVIDOR 
+Feb 24 23:25:59.282 HYPERVISOR: exec_cmd: vm set_ios SERVIDOR C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:37.524 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:26:37.524 HYPERVISOR: exec_cmd: vm slot_remove_binding SERVIDOR 1 0 
+Feb 24 23:26:37.524 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:26:37.524 HYPERVISOR: exec_cmd: vm slot_add_binding SERVIDOR 1 0 NM-16ESW 
+Feb 24 23:28:06.776 HYPERVISOR: exec_cmd: nio create_udp udp-cd2a339f-80ea-4994-a866-cf0b6074b093 10018 127.0.0.1 10019 
+Feb 24 23:28:07.136 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVIDOR 1 1 udp-cd2a339f-80ea-4994-a866-cf0b6074b093 
+Feb 24 23:28:07.148 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:28:19.316 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:28:19.316 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SERVIDOR 1 1 
+Feb 24 23:28:19.316 HYPERVISOR: exec_cmd: nio delete udp-cd2a339f-80ea-4994-a866-cf0b6074b093 
+Feb 24 23:28:30.121 HYPERVISOR: exec_cmd: nio create_udp udp-c7c08019-c594-41e4-86bb-602150ccab11 10018 127.0.0.1 10019 
+Feb 24 23:28:30.126 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVIDOR 1 2 udp-c7c08019-c594-41e4-86bb-602150ccab11 
+Feb 24 23:28:30.126 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:28:38.002 HYPERVISOR: exec_cmd: nio create_udp udp-d74e47c8-1129-4999-88c2-509e0eb568fb 10022 127.0.0.1 10023 
+Feb 24 23:28:38.012 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVIDOR 1 1 udp-d74e47c8-1129-4999-88c2-509e0eb568fb 
+Feb 24 23:28:38.012 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:28:42.417 HYPERVISOR: exec_cmd: vm set_ios SERVIDOR C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:28:53.687 HYPERVISOR: exec_cmd: vm set_ios SERVIDOR C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:29:34.999 HYPERVISOR: exec_cmd: vm set_ghost_status SERVIDOR 2 
+Feb 24 23:29:34.999 HYPERVISOR: exec_cmd: vm set_ghost_file SERVIDOR C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:29:34.999 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:29:34.999 HYPERVISOR: exec_cmd: vm set_config SERVIDOR configs\i1_startup-config.cfg 
+Feb 24 23:29:34.999 HYPERVISOR: exec_cmd: vm start SERVIDOR 
+Feb 24 23:30:05.349 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:30:05.369 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:31:05.361 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:31:05.371 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:34:35.498 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:34:35.507 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:35:05.508 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:35:05.523 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:35:35.525 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:35:35.541 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:48:35.852 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:48:35.862 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:48:59.771 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:48:59.772 HYPERVISOR: exec_cmd: vm suspend SERVIDOR 
+Feb 24 23:49:06.483 HYPERVISOR: exec_cmd: vm set_ghost_status SERVIDOR 2 
+Feb 24 23:49:06.492 HYPERVISOR: exec_cmd: vm set_ghost_file SERVIDOR C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:49:06.492 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:49:06.492 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:49:06.492 HYPERVISOR: exec_cmd: vm resume SERVIDOR 
+Feb 24 23:58:19.044 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:58:19.044 HYPERVISOR: exec_cmd: vm suspend SERVIDOR 
+Feb 24 23:58:30.339 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm set_ghost_status SERVIDOR 2 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm set_ghost_file SERVIDOR C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:58:40.200 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:58:40.210 HYPERVISOR: exec_cmd: vm resume SERVIDOR 
+Feb 24 23:59:13.310 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:59:13.310 HYPERVISOR: exec_cmd: vm stop SERVIDOR 
+Feb 24 23:59:13.435 VM: VM SERVIDOR shutdown.
+Feb 24 23:59:13.440 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:59:23.911 HYPERVISOR: exec_cmd: vm set_ghost_status SERVIDOR 2 
+Feb 24 23:59:23.983 HYPERVISOR: exec_cmd: vm set_ghost_file SERVIDOR C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:59:23.983 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 24 23:59:23.983 HYPERVISOR: exec_cmd: vm set_config SERVIDOR configs\i1_startup-config.cfg 
+Feb 24 23:59:23.990 HYPERVISOR: exec_cmd: vm start SERVIDOR 
+Feb 24 23:59:54.444 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 24 23:59:54.464 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 
+Feb 25 00:03:07.839 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 25 00:03:07.839 HYPERVISOR: exec_cmd: vm slot_disable_nio SERVIDOR 1 2 
+Feb 25 00:03:07.877 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SERVIDOR 1 2 
+Feb 25 00:03:07.880 HYPERVISOR: exec_cmd: nio delete udp-c7c08019-c594-41e4-86bb-602150ccab11 
+Feb 25 00:03:14.409 HYPERVISOR: exec_cmd: nio create_udp udp-85501fbb-22fd-4043-8a69-5001ab15561f 10016 127.0.0.1 10017 
+Feb 25 00:03:14.409 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVIDOR 1 2 udp-85501fbb-22fd-4043-8a69-5001ab15561f 
+Feb 25 00:03:14.409 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 25 00:03:14.409 HYPERVISOR: exec_cmd: vm slot_enable_nio SERVIDOR 1 2 
+Feb 25 00:27:48.388 HYPERVISOR: exec_cmd: vm get_status SERVIDOR 
+Feb 25 00:27:48.388 HYPERVISOR: exec_cmd: vm stop SERVIDOR 
+Feb 25 00:27:48.533 VM: VM SERVIDOR shutdown.
+Feb 25 00:27:48.543 HYPERVISOR: exec_cmd: vm extract_config SERVIDOR 

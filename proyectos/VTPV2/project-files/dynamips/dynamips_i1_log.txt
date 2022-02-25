@@ -1,0 +1,41 @@
+Feb 24 23:01:02.603 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 24 23:01:02.608 HYPERVISOR: Started on IP = localhost, TCP port = 49945.
+Feb 24 23:01:03.087 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 24 23:01:03.088 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips 
+Feb 24 23:01:03.805 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips
+Feb 24 23:01:03.806 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\85a82c67-7480-4e05-ac8b-c4a9bc4d7d0b 
+Feb 24 23:01:04.470 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\85a82c67-7480-4e05-ac8b-c4a9bc4d7d0b
+Feb 24 23:01:04.471 HYPERVISOR: exec_cmd: vm create CLIENTE 1 c3725 
+Feb 24 23:01:04.597 VM: VM CLIENTE created.
+Feb 24 23:01:04.599 HYPERVISOR: exec_cmd: vm set_con_tcp_port CLIENTE 5000 
+Feb 24 23:01:04.600 HYPERVISOR: exec_cmd: c3725 get_mac_addr CLIENTE 
+Feb 24 23:01:04.601 HYPERVISOR: exec_cmd: vm set_disk0 CLIENTE 1 
+Feb 24 23:01:04.602 HYPERVISOR: exec_cmd: vm set_exec_area CLIENTE 64 
+Feb 24 23:01:04.607 HYPERVISOR: exec_cmd: vm set_ios CLIENTE C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:01:04.608 HYPERVISOR: exec_cmd: c3725 set_mac_addr CLIENTE c201.3784.0000 
+Feb 24 23:01:04.611 HYPERVISOR: exec_cmd: vm set_nvram CLIENTE 256 
+Feb 24 23:01:04.612 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:01:04.613 HYPERVISOR: exec_cmd: vm slot_add_binding CLIENTE 1 0 NM-16ESW 
+Feb 24 23:01:04.614 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:01:04.614 HYPERVISOR: exec_cmd: vm slot_add_binding CLIENTE 2 0 NM-1FE-TX 
+Feb 24 23:01:08.387 HYPERVISOR: exec_cmd: nio create_udp udp-6005dac8-3e54-44e8-8dee-3b2da049f2b1 10002 127.0.0.1 10003 
+Feb 24 23:01:10.634 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CLIENTE 1 1 udp-6005dac8-3e54-44e8-8dee-3b2da049f2b1 
+Feb 24 23:01:10.635 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:01:11.693 HYPERVISOR: exec_cmd: nio create_udp udp-49c6f579-7138-4f70-a1db-400b0161d7f4 10016 127.0.0.1 10017 
+Feb 24 23:01:11.700 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CLIENTE 1 2 udp-49c6f579-7138-4f70-a1db-400b0161d7f4 
+Feb 24 23:01:11.701 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:25:25.971 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:25:25.971 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 24 23:25:39.052 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:25:39.057 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CLIENTE 1 1 
+Feb 24 23:25:39.057 HYPERVISOR: exec_cmd: nio delete udp-6005dac8-3e54-44e8-8dee-3b2da049f2b1 
+Feb 24 23:25:39.152 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:25:39.162 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CLIENTE 1 2 
+Feb 24 23:25:39.163 HYPERVISOR: exec_cmd: nio delete udp-49c6f579-7138-4f70-a1db-400b0161d7f4 
+Feb 24 23:25:39.572 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:25:39.572 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 24 23:25:39.582 HYPERVISOR: exec_cmd: vm delete CLIENTE 
+Feb 24 23:25:39.582 VM: VM CLIENTE destroyed.
+Feb 24 23:25:39.592 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 24 23:25:40.022 HYPERVISOR: Stopped.
+Feb 24 23:25:40.022 GENERAL: reset done.

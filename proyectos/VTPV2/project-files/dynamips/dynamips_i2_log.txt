@@ -1,0 +1,47 @@
+Feb 24 23:01:05.963 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 24 23:01:05.966 HYPERVISOR: Started on IP = localhost, TCP port = 49949.
+Feb 24 23:01:06.380 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 24 23:01:06.381 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips 
+Feb 24 23:01:06.381 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips
+Feb 24 23:01:06.382 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\33284118-b705-4c27-89de-88f370ac84ba 
+Feb 24 23:01:06.484 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\33284118-b705-4c27-89de-88f370ac84ba
+Feb 24 23:01:06.485 HYPERVISOR: exec_cmd: vm create TRANS 2 c3725 
+Feb 24 23:01:06.765 VM: VM TRANS created.
+Feb 24 23:01:06.766 HYPERVISOR: exec_cmd: vm set_con_tcp_port TRANS 5001 
+Feb 24 23:01:06.767 HYPERVISOR: exec_cmd: c3725 get_mac_addr TRANS 
+Feb 24 23:01:06.767 HYPERVISOR: exec_cmd: vm set_disk0 TRANS 1 
+Feb 24 23:01:06.768 HYPERVISOR: exec_cmd: vm set_exec_area TRANS 64 
+Feb 24 23:01:06.771 HYPERVISOR: exec_cmd: vm set_ios TRANS C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:01:06.773 HYPERVISOR: exec_cmd: c3725 set_mac_addr TRANS c202.4f00.0000 
+Feb 24 23:01:06.774 HYPERVISOR: exec_cmd: vm set_nvram TRANS 256 
+Feb 24 23:01:06.775 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:01:06.776 HYPERVISOR: exec_cmd: vm slot_add_binding TRANS 1 0 NM-16ESW 
+Feb 24 23:01:06.777 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:01:06.777 HYPERVISOR: exec_cmd: vm slot_add_binding TRANS 2 0 NM-1FE-TX 
+Feb 24 23:01:10.775 HYPERVISOR: exec_cmd: nio create_udp udp-64b8f9e5-de60-44ca-8738-57764e3e9859 10006 127.0.0.1 10007 
+Feb 24 23:01:11.120 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 1 udp-64b8f9e5-de60-44ca-8738-57764e3e9859 
+Feb 24 23:01:11.121 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:01:11.673 HYPERVISOR: exec_cmd: nio create_udp udp-db7cf2e5-72ce-4fdf-b5d1-75ede229de6c 10014 127.0.0.1 10015 
+Feb 24 23:01:11.680 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 3 udp-db7cf2e5-72ce-4fdf-b5d1-75ede229de6c 
+Feb 24 23:01:11.681 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:01:11.937 HYPERVISOR: exec_cmd: nio create_udp udp-0e960d98-2869-4b90-ac27-f6dcdb6c9511 10022 127.0.0.1 10023 
+Feb 24 23:01:11.944 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 2 udp-0e960d98-2869-4b90-ac27-f6dcdb6c9511 
+Feb 24 23:01:11.945 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:25:25.971 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:25:25.971 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:25:39.142 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:25:39.142 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding TRANS 1 3 
+Feb 24 23:25:39.142 HYPERVISOR: exec_cmd: nio delete udp-db7cf2e5-72ce-4fdf-b5d1-75ede229de6c 
+Feb 24 23:25:39.322 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:25:39.322 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding TRANS 1 2 
+Feb 24 23:25:39.326 HYPERVISOR: exec_cmd: nio delete udp-0e960d98-2869-4b90-ac27-f6dcdb6c9511 
+Feb 24 23:25:39.392 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:25:39.392 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding TRANS 1 1 
+Feb 24 23:25:39.392 HYPERVISOR: exec_cmd: nio delete udp-64b8f9e5-de60-44ca-8738-57764e3e9859 
+Feb 24 23:25:39.507 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:25:39.511 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:25:39.521 HYPERVISOR: exec_cmd: vm delete TRANS 
+Feb 24 23:25:39.521 VM: VM TRANS destroyed.
+Feb 24 23:25:39.521 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 24 23:25:39.804 HYPERVISOR: Stopped.
+Feb 24 23:25:39.804 GENERAL: reset done.

@@ -1,0 +1,100 @@
+Feb 24 23:25:46.752 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 24 23:25:46.752 HYPERVISOR: Started on IP = localhost, TCP port = 50313.
+Feb 24 23:25:47.192 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 24 23:25:47.192 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips 
+Feb 24 23:25:47.192 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips
+Feb 24 23:25:47.192 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\6b283d76-908a-41d6-9539-7effac2188ce 
+Feb 24 23:25:47.282 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\6b283d76-908a-41d6-9539-7effac2188ce
+Feb 24 23:25:47.282 HYPERVISOR: exec_cmd: vm create ESW2 2 c3725 
+Feb 24 23:25:47.292 VM: VM ESW2 created.
+Feb 24 23:25:47.292 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Feb 24 23:25:47.292 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+Feb 24 23:25:47.292 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:47.292 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Feb 24 23:25:47.302 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Feb 24 23:25:47.302 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Feb 24 23:25:47.302 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Feb 24 23:25:47.302 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-1FE-TX 
+Feb 24 23:25:47.302 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Feb 24 23:25:47.302 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 2 0 NM-1FE-TX 
+Feb 24 23:25:47.442 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:53.222 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:02.932 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:02.942 HYPERVISOR: exec_cmd: vm rename ESW2 TRANS 
+Feb 24 23:26:03.082 HYPERVISOR: exec_cmd: vm set_ios TRANS C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:46.948 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:26:46.948 HYPERVISOR: exec_cmd: vm slot_remove_binding TRANS 1 0 
+Feb 24 23:26:46.953 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:26:46.953 HYPERVISOR: exec_cmd: vm slot_add_binding TRANS 1 0 NM-16ESW 
+Feb 24 23:27:01.125 HYPERVISOR: exec_cmd: vm set_ios TRANS C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:27:32.235 HYPERVISOR: exec_cmd: nio create_udp udp-03e48612-e7b4-463c-a163-d9599e33eacf 10008 127.0.0.1 10009 
+Feb 24 23:27:33.095 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 1 udp-03e48612-e7b4-463c-a163-d9599e33eacf 
+Feb 24 23:27:33.095 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:27:38.945 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:27:38.945 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding TRANS 1 1 
+Feb 24 23:27:38.951 HYPERVISOR: exec_cmd: nio delete udp-03e48612-e7b4-463c-a163-d9599e33eacf 
+Feb 24 23:27:46.415 HYPERVISOR: exec_cmd: nio create_udp udp-b75d9dac-38d8-40b1-b8b8-7816510addc1 10008 127.0.0.1 10009 
+Feb 24 23:27:46.475 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 3 udp-b75d9dac-38d8-40b1-b8b8-7816510addc1 
+Feb 24 23:27:46.475 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:27:57.670 HYPERVISOR: exec_cmd: nio create_udp udp-174a3fd0-3cf1-48b3-bdc7-b056268f2204 10012 127.0.0.1 10013 
+Feb 24 23:27:57.676 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 1 udp-174a3fd0-3cf1-48b3-bdc7-b056268f2204 
+Feb 24 23:27:57.676 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:28:06.746 HYPERVISOR: exec_cmd: nio create_udp udp-65d5d4c0-dd35-4f6d-aab2-1ed8b82e62b1 10016 127.0.0.1 10017 
+Feb 24 23:28:06.756 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 2 udp-65d5d4c0-dd35-4f6d-aab2-1ed8b82e62b1 
+Feb 24 23:28:06.756 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:28:19.300 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:28:19.300 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding TRANS 1 2 
+Feb 24 23:28:19.306 HYPERVISOR: exec_cmd: nio delete udp-65d5d4c0-dd35-4f6d-aab2-1ed8b82e62b1 
+Feb 24 23:28:30.089 HYPERVISOR: exec_cmd: nio create_udp udp-34c7452d-948d-4239-923c-6c8ff21e629f 10016 127.0.0.1 10017 
+Feb 24 23:28:30.097 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 2 udp-34c7452d-948d-4239-923c-6c8ff21e629f 
+Feb 24 23:28:30.097 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:48:59.769 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:49:10.072 HYPERVISOR: exec_cmd: vm set_ghost_status TRANS 2 
+Feb 24 23:49:10.072 HYPERVISOR: exec_cmd: vm set_ghost_file TRANS C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:49:10.072 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:49:10.072 HYPERVISOR: exec_cmd: vm set_config TRANS configs\i2_startup-config.cfg 
+Feb 24 23:49:10.072 HYPERVISOR: exec_cmd: vm start TRANS 
+Feb 24 23:49:40.471 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:49:40.484 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:50:10.477 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:50:10.492 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:50:40.481 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:50:40.495 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:52:10.543 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:52:10.556 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:58:19.044 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:58:19.044 HYPERVISOR: exec_cmd: vm suspend TRANS 
+Feb 24 23:58:30.339 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:58:36.605 HYPERVISOR: exec_cmd: vm set_ios TRANS C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm set_ghost_status TRANS 2 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm set_ghost_file TRANS C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:58:40.189 HYPERVISOR: exec_cmd: vm resume TRANS 
+Feb 24 23:58:40.722 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:58:40.733 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:59:13.490 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:59:13.493 HYPERVISOR: exec_cmd: vm stop TRANS 
+Feb 24 23:59:13.690 VM: VM TRANS shutdown.
+Feb 24 23:59:13.694 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:59:23.983 HYPERVISOR: exec_cmd: vm set_ghost_status TRANS 2 
+Feb 24 23:59:23.983 HYPERVISOR: exec_cmd: vm set_ghost_file TRANS C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 24 23:59:23.990 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 24 23:59:24.041 HYPERVISOR: exec_cmd: vm set_config TRANS configs\i2_startup-config.cfg 
+Feb 24 23:59:24.041 HYPERVISOR: exec_cmd: vm start TRANS 
+Feb 24 23:59:54.434 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 24 23:59:54.459 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 25 00:01:54.532 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 25 00:01:54.537 HYPERVISOR: exec_cmd: vm extract_config TRANS 
+Feb 25 00:03:07.821 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 25 00:03:07.821 HYPERVISOR: exec_cmd: vm slot_disable_nio TRANS 1 2 
+Feb 25 00:03:07.837 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding TRANS 1 2 
+Feb 25 00:03:07.837 HYPERVISOR: exec_cmd: nio delete udp-34c7452d-948d-4239-923c-6c8ff21e629f 
+Feb 25 00:03:14.439 HYPERVISOR: exec_cmd: nio create_udp udp-1254c819-c786-495b-b0fb-f97ec64e6bc5 10018 127.0.0.1 10019 
+Feb 25 00:03:14.445 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TRANS 1 2 udp-1254c819-c786-495b-b0fb-f97ec64e6bc5 
+Feb 25 00:03:14.445 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 25 00:03:14.445 HYPERVISOR: exec_cmd: vm slot_enable_nio TRANS 1 2 
+Feb 25 00:27:48.413 HYPERVISOR: exec_cmd: vm get_status TRANS 
+Feb 25 00:27:48.413 HYPERVISOR: exec_cmd: vm stop TRANS 
+Feb 25 00:27:48.577 VM: VM TRANS shutdown.
+Feb 25 00:27:48.577 HYPERVISOR: exec_cmd: vm extract_config TRANS 

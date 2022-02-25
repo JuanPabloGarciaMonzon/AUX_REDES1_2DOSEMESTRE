@@ -1,0 +1,61 @@
+Feb 24 23:25:49.702 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 24 23:25:49.704 HYPERVISOR: Started on IP = localhost, TCP port = 50320.
+Feb 24 23:25:50.122 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 24 23:25:50.122 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips 
+Feb 24 23:25:50.122 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips
+Feb 24 23:25:50.122 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\d3834e16-9659-4b4b-947f-f92dc57290cb 
+Feb 24 23:25:50.122 GENERAL: working_dir=C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\d3834e16-9659-4b4b-947f-f92dc57290cb
+Feb 24 23:25:50.122 HYPERVISOR: exec_cmd: vm create ESW3 3 c3725 
+Feb 24 23:25:50.131 VM: VM ESW3 created.
+Feb 24 23:25:50.131 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5002 
+Feb 24 23:25:50.131 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW3 
+Feb 24 23:25:50.131 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:50.131 HYPERVISOR: exec_cmd: vm set_exec_area ESW3 64 
+Feb 24 23:25:50.131 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+Feb 24 23:25:50.142 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+Feb 24 23:25:50.142 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 24 23:25:50.142 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-1FE-TX 
+Feb 24 23:25:50.142 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 24 23:25:50.142 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 2 0 NM-1FE-TX 
+Feb 24 23:25:50.312 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:25:55.377 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:08.243 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:08.243 HYPERVISOR: exec_cmd: vm rename ESW3 CLIENTE 
+Feb 24 23:26:08.378 HYPERVISOR: exec_cmd: vm set_ios CLIENTE C:/Users/jp_gm/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Feb 24 23:26:54.829 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:26:54.829 HYPERVISOR: exec_cmd: vm slot_remove_binding CLIENTE 1 0 
+Feb 24 23:26:54.829 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:26:54.833 HYPERVISOR: exec_cmd: vm slot_add_binding CLIENTE 1 0 NM-16ESW 
+Feb 24 23:27:20.834 HYPERVISOR: exec_cmd: nio create_udp udp-a0a8eaa7-be42-4454-8c72-4e40aedefdf9 10002 127.0.0.1 10003 
+Feb 24 23:27:21.211 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CLIENTE 1 1 udp-a0a8eaa7-be42-4454-8c72-4e40aedefdf9 
+Feb 24 23:27:21.211 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:27:32.215 HYPERVISOR: exec_cmd: nio create_udp udp-5f1460df-2aa2-4454-9604-2e7f656bad05 10006 127.0.0.1 10007 
+Feb 24 23:27:32.215 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CLIENTE 1 2 udp-5f1460df-2aa2-4454-9604-2e7f656bad05 
+Feb 24 23:27:32.215 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:27:38.935 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:27:38.935 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CLIENTE 1 2 
+Feb 24 23:27:38.935 HYPERVISOR: exec_cmd: nio delete udp-5f1460df-2aa2-4454-9604-2e7f656bad05 
+Feb 24 23:27:46.395 HYPERVISOR: exec_cmd: nio create_udp udp-13b7db3d-5399-45e0-a1e0-cf9a5cf9f685 10006 127.0.0.1 10007 
+Feb 24 23:27:46.405 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CLIENTE 1 2 udp-13b7db3d-5399-45e0-a1e0-cf9a5cf9f685 
+Feb 24 23:27:46.405 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:58:19.044 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:58:30.350 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:59:13.501 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 24 23:59:13.501 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:07:37.637 HYPERVISOR: exec_cmd: vm set_ghost_status CLIENTE 2 
+Feb 25 00:07:37.637 HYPERVISOR: exec_cmd: vm set_ghost_file CLIENTE C:\Users\jp_gm\Escritorio\AUXILIATURA REDES 1\GNS3\proyectos\VTPV2\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Feb 25 00:07:37.637 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 25 00:07:37.637 HYPERVISOR: exec_cmd: vm set_config CLIENTE configs\i3_startup-config.cfg 
+Feb 25 00:07:37.637 HYPERVISOR: exec_cmd: vm start CLIENTE 
+Feb 25 00:08:08.075 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:08:08.093 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:09:38.105 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:09:38.116 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:10:38.109 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:10:38.114 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:27:38.579 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:27:38.602 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
+Feb 25 00:27:48.413 HYPERVISOR: exec_cmd: vm get_status CLIENTE 
+Feb 25 00:27:48.413 HYPERVISOR: exec_cmd: vm stop CLIENTE 
+Feb 25 00:27:48.528 VM: VM CLIENTE shutdown.
+Feb 25 00:27:48.528 HYPERVISOR: exec_cmd: vm extract_config CLIENTE 
